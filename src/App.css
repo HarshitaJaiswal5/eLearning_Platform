@@ -1,0 +1,30 @@
+.rounded-slide-button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.rounded-slide-button span:first-child {
+  transition: transform 0.5s ease;
+}
+
+.rounded-slide-button:hover span:first-child {
+  transform: translateX(0);
+}
+
+.rounded-slide-button:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-slide-button span:last-child {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.rounded-slide-button:hover {
+  transform: scale(1.05);
+}
